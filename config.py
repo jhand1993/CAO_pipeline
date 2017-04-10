@@ -14,6 +14,7 @@ dirlists = [astrometry, stacking, sex, finished_catalogs, finished_stacked, targ
 
 def makedirs():
     # making directories
+    pipeline_root = input('Provide pipeline root directory:')
     for i in dirlists:
         try:
             os.mkdir(i)
